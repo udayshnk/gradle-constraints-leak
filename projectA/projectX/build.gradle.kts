@@ -3,6 +3,6 @@ plugins {
 }
 
 dependencies {
-    implementation(platform(project(":moduleA")))
+    implementation(platform(project(":projectA")))
     implementation("com.fasterxml.jackson.core:jackson-databind")
 }

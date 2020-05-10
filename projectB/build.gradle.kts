@@ -3,6 +3,6 @@ plugins {
 }
 
 dependencies {
-    implementation(project(":subModuleA1"))
+    implementation(project(":projectX"))
     implementation("com.google.guava:guava:19.0")
 }

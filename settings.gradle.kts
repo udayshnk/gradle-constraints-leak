@@ -1,10 +1,10 @@
-rootProject.name = "gradle-sample-multi-module"
-include(":moduleA")
-include(":subModuleA1")
-include(":subModuleA2")
-include(":moduleB")
+rootProject.name = "gradle-constraints-leak"
+include(":projectA")
+include(":projectX")
+include(":projectY")
+include(":projectB")
 
-project(":moduleA").projectDir = file("moduleA")
-project(":subModuleA1").projectDir = file("moduleA/subModuleA1")
-project(":subModuleA2").projectDir = file("moduleA/subModuleA2")
-project(":moduleB").projectDir = file("moduleB")
+project(":projectA").projectDir = file("projectA")
+project(":projectX").projectDir = file("projectA/projectX")
+project(":projectY").projectDir = file("projectA/projectY")
+project(":projectB").projectDir = file("projectB")
