@@ -4,5 +4,5 @@ plugins {
 
 dependencies {
     implementation(project(":projectX"))
-    implementation("com.google.guava:guava:19.0")
+    implementation(project(":projectZ"))
 }
